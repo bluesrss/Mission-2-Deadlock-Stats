@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Deadlock Stats - Mission 2</title>
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <div class="background"></div>
+        <div class="background-overlay"></div>
+
+        <header class="header">
+            <div class="header-content">
+                <div>
+                    <h1 class="site-title">DEADLOCKstats</h1>
+                    <p class="site-subtitle">Match History: ★piinq★</p>
+                </div>
+                <a class="back-to-top" href="#">↑ Back to top</a>
+            </div>
+        </header>
+
+        <main>
+            <div id="api-container" class="match-grid">
+                <p class="loading-message">Loading Match History...</p>
+            </div>
+
+            <template id="match-card-template">
+                <article class="match-card">
+                    <div class="match-header">
+                        <div class="match-heading">
+                            <h2 class="hero-name">Hero name</h2>
+                            <p class="match-date">Match Date</p>
+                        </div>
+
+                        <div class="result-info">
+                            <span class="result-badge">Win</span>
+                            <span class="match-duration">12:34</span>
+                        </div>
+                    </div>
+
+                    <img class="hero-portrait" src="" alt="hero portrait" />
+
+                    <section class="stats-panel">
+                        <h3 class="section-label">COMBAT</h3>
+
+                        <div class="combat-stats">
+                            <div>
+                                <p class="combat-value kills">0</p>
+                                <p class="combat-label">KILLS</p>
+                            </div>
+
+                            <div>
+                                <p class="combat-value deaths">0</p>
+                                <p class="combat-label">DEATHS</p>
+                            </div>
+
+                            <div>
+                                <p class="combat-value assists">0</p>
+                                <p class="combat-label">ASSISTS</p>
+                            </div>
+                        </div>
+
+                        <div class="kda-row">
+                            <span class="kda-label">KDA RATIO: </span>
+                            <span class="kda-value">0.00</span>
+                        </div>
+
+                        <div class="match-details">
+                            <div class="detail-row">
+                                <span class="detail-label">$ Souls:</span>
+                                <span class="detail-value souls">0</span>
+                            </div>
+
+                            <div class="detail-row">
+                                <span class="detail-label"
+                                    >⚔ Player Damage:</span
+                                ><span class="detail-value player-damage"
+                                    >0</span
+                                >
+                            </div>
+
+                            <div class="detail-row">
+                                <span class="detail-label"
+                                    >◆ Objective Damage:</span
+                                >
+                                <span class="detail-value objective-damage"
+                                    >0</span
+                                >
+                            </div>
+
+                            <div class="detail-row">
+                                <span class="detail-label">♡ Healing:</span>
+                                <span class="detail-value healing">0</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="build-section">
+                        <h3 class="build-title">ENDGAME BUILD:</h3>
+
+                        <div class="build-grid">
+                            <div class="build-slot"></div>
+                            <div class="build-slot"></div>
+                            <div class="build-slot"></div>
+                            <div class="build-slot"></div>
+                            <div class="build-slot"></div>
+                            <div class="build-slot"></div>
+                            <div class="build-slot"></div>
+                            <div class="build-slot"></div>
+                            <div class="build-slot"></div>
+                            <div class="build-slot"></div>
+                            <div class="build-slot"></div>
+                            <div class="build-slot"></div>
+                        </div>
+                    </section>
+                </article>
+            </template>
+        </main>
+
+        <footer class="site-footer">
+            <h1>Stats and Data from Deadlock API!</h1>
+        </footer>
+    </body>
+</html>
